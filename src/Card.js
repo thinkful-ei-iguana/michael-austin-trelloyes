@@ -1,5 +1,10 @@
 import React from 'react';
-import STORE from './store';
 
-
-// RENDERS MARKUP MATCHING DESIGN HTML FOR CARDS //
+export default function Card(props) {
+  return ( 
+  <div className="Card"> 
+    <h3>{props.title}</h3>
+      <p>{props.content}</p> 
+  </div> 
+  ) 
+}
